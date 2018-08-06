@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kata 1</title>
+</head>
+<body>
+    <h1>Kata 1</h1>
+    <h4>Display the numbers from 1 to 20.</h4>
+    <span id="num1"></span>
+    <br><br>
+
+    <h4>Display the even numbers from 1 to 20.</h4>
+    <span id="num2"></span>
+    <br><br>
+
+    <h4>Display the odd numbers from 1 to 20.</h4>
+    <span id="num3"></span>
+    <br><br>
+
+    <h4>Display the multiples of 5 up to 100.</h4>
+    <span id="num4"></span>
+    <br><br>
+
+    <h4>Display the square numbers up to 100.</h4>
+    <span id="num5"></span>
+    <br><br>
+
+    <h4>Display the numbers counting backwards from 20 to 1.</h4>
+    <span id="num6"></span>
+    <br><br>
+
+    <h4>Display the even numbers counting backwards from 20.</h4>
+    <span id="num7"></span>
+    <br><br>
+
+    <h4>Display the odd numbers from 20 to 1, counting backwards.</h4>
+    <span id="num8"></span>
+    <br><br>
+
+    <h4>Display the multiples of 5, counting down from 100.</h4>
+    <span id="num9"></span>
+    <br><br>
+
+    <h4>Display the square numbers, counting down from 100.</h4>
+    <span id="num10"></span>
+    <br><br>
+
+    <h4>Display the 20 elements of sampleArray.</h4>
+    <span id="num11"></span>
+    <br><br>
+
+    <h4>Display all the even numbers contained in sampleArray.</h4>
+    <span id="num12"></span>
+    <br><br>
+    
+    <h4>Display all the odd numbers contained in sampleArray.</h4>
+    <span id="num13"></span>
+    <br><br>
+
+    <h4>Display the square of each element in sampleArray.</h4>
+    <span id="num14"></span>
+    <br><br>
+
+    <h4>Display the sum of all the numbers from 1 to 20.</h4>
+    <span id="num15"></span>
+    <br><br>
+
+    <h4>Display the sum of all the elements in sampleArray.</h4>
+    <span id="num16"></span>
+    <br><br>
+
+    <h4>Display the smallest element in sampleArray.</h4>
+    <span id="num17"></span>
+    <br><br>
+
+    <h4>Display the largest element in sampleArray.</h4>
+    <span id="num18"></span>
+    <br><br>
+
+    <h4>Display 20 solid gray rectangles, each 20px high and 100px wide.</h4>
+    <div id="num19"></div>
+    <br><br>
+
+    <h4>Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).</h4>
+    <div id="num20"></div>
+    <br><br>
+
+    <h4>Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.</h4>
+    <div id="num21"></div>
+    <br><br>
+
+    <h4>As in #21, but alternate colors so that every other rectangle is red.</h4>
+    <div id="num22"></div>
+    <br><br>
+
+    <h4>As in #21, but color the rectangles with even widths red.</h4>
+    <div id="num23"></div>
+    <br><br>
+
+    <script>
+
+        for(let counter = 1; counter <= 20; counter++){
+            let element1 = document.createElement("span");
+            let answer1 = document.createTextNode(counter + " ");
+            element1.appendChild(answer1);
+            let place1 = document.getElementById("num1");
+            place1.appendChild(element1);
+        };
+
+        for(let counter = 2; counter <= 20; counter++){
+            if ((counter % 2) == 0) {
+                let element2 = document.createElement("span");
+                let answer2 = document.createTextNode(counter + " ");
+                element2.appendChild(answer2);
+                let place2 = document.getElementById("num2");
+                place2.appendChild(element2);
+            }
+        };
+
+        for(let counter = 1; counter <= 20; counter++){
+            if ((counter % 2) !== 0) {
+                let element3 = document.createElement("span");
+                let answer3 = document.createTextNode(counter + " ");
+                element3.appendChild(answer3);
+                let place3 = document.getElementById("num3");
+                place3.appendChild(element3);
+                }
+        };
+
+        for(let counter = 1; counter <= 100; counter++){
+            if ((counter % 5) == 0) {
+                let element4 = document.createElement("span");
+                let answer4 = document.createTextNode(counter + " ");
+                element4.appendChild(answer4);
+                let place4 = document.getElementById("num4");
+                place4.appendChild(element4);
+                }
+        };
+
+        for(let counter = 1; counter <= 10; counter++){
+            let element5 = document.createElement("span");
+            let answer5 = document.createTextNode(counter*counter + " ");
+            element5.appendChild(answer5);
+            let place5 = document.getElementById("num5");
+            place5.appendChild(element5);
+        };
+
+        for(let counter = 20; counter >= 1; counter--){
+            let element6 = document.createElement("span");
+            let answer6 = document.createTextNode(counter + " ");
+            element6.appendChild(answer6);
+            let place6 = document.getElementById("num6");
+            place6.appendChild(element6);
+            };
+
+        for(let counter = 20; counter >= 1; counter--){
+            if ((counter % 2) == 0) {
+                let element7 = document.createElement("span");
+                let answer7 = document.createTextNode(counter + " ");
+                element7.appendChild(answer7);
+                let place7 = document.getElementById("num7");
+                place7.appendChild(element7);
+                }
+        };
+
+        for(let counter = 20; counter >= 1; counter--){
+            if ((counter % 2) !== 0) {
+                let element8 = document.createElement("span");
+                let answer8 = document.createTextNode(counter + " ");
+                element8.appendChild(answer8);
+                let place8 = document.getElementById("num8");
+                place8.appendChild(element8);
+                }
+        };
+
+        for(let counter = 100; counter >= 1; counter--){
+            if ((counter % 5) == 0) {
+                let element9 = document.createElement("span");
+                let answer9 = document.createTextNode(counter + " ");
+                element9.appendChild(answer9);
+                let place9 = document.getElementById("num9");
+                place9.appendChild(element9);
+                }
+        };
+
+        for(let counter = 10; counter >= 1; counter--){
+            let element10 = document.createElement("span");
+            let answer10 = document.createTextNode(counter*counter + " ");
+            element10.appendChild(answer10);
+            let place10 = document.getElementById("num10");
+            place10.appendChild(element10);
+            };
+
+
+    const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472]; 
+
+    let element11 = document.createElement("span");
+    let answer11 = document.createTextNode(sampleArray.join(", "));
+    element11.appendChild(answer11);
+    let place11 = document.getElementById("num11");
+    place11.appendChild(element11);
+
+    let even = sampleArray.filter(num12 => num12 % 2 == 0);
+    let element12 = document.createElement("span");
+    let answer12 = document.createTextNode(even.join(", "));
+    element12.appendChild(answer12);
+    let place12 = document.getElementById("num12");
+    place12.appendChild(element12);
+    
+    let odd = sampleArray.filter(num13 => num13 % 2 !== 0);
+    let element13 = document.createElement("span");
+    let answer13 = document.createTextNode(odd.join(", "));
+    element13.appendChild(answer13);
+    let place13 = document.getElementById("num13");
+    place13.appendChild(element13);
+
+    let square = sampleArray.map(num14 => num14*num14);
+    let element14 = document.createElement("span");
+    let answer14 = document.createTextNode(square.join(", "));
+    element14.appendChild(answer14);
+    let place14 = document.getElementById("num14");
+    place14.appendChild(element14);
+
+    let sum = 0;
+    for(let num15 = 1; num15 <= 20; num15++){
+        sum = num15 + sum;
+    };
+    let element15 = document.createElement("span");
+    let answer15 = document.createTextNode(sum);
+    element15.appendChild(answer15);
+    let place15 = document.getElementById("num15");
+    place15.appendChild(element15);
+
+    let sumArray = sampleArray.reduce((acc, num16) => acc + num16)
+    let element16 = document.createElement("span");
+    let answer16 = document.createTextNode(sumArray);
+    element16.appendChild(answer16);
+    let place16 = document.getElementById("num16");
+    place16.appendChild(element16);
+
+    let small = sampleArray[0];
+    for(let i = 1; i <= sampleArray.length; i++){
+        if(sampleArray[i] < small){
+            small = sampleArray[i];
+        }
+    }
+    let element17 = document.createElement("span");
+    let answer17 = document.createTextNode(small);
+    element17.appendChild(answer17);
+    let place17 = document.getElementById("num17");
+    place17.appendChild(element17);
+
+    let large = sampleArray[0];
+    for(let i = 1; i <= sampleArray.length; i++){
+        if(sampleArray[i] > large){
+            large = sampleArray[i];
+        }
+    }
+    let element18 = document.createElement("span");
+    let answer18 = document.createTextNode(large);
+    element18.appendChild(answer18);
+    let place18 = document.getElementById("num18");
+    place18.appendChild(element18);
+
+    for(i = 1; i <= 20; i++){
+        let rect = document.createElement("div");
+        rect.style.marginBottom = 2 + "px";
+        rect.style.height = 20 + "px";
+        rect.style.width = 100 + "px";
+        rect.style.backgroundColor = "gray";
+        var destination = document.getElementById("num19");
+        destination.appendChild(rect);
+    }
+
+    for(i = 0; i <= 20; i++){
+        let rect = document.createElement("div");
+        let width = (105 + (i*5)) + "px";
+        rect.style.marginBottom = 2 + "px";
+        rect.style.height = 20 + "px";
+        rect.style.width = width;
+        rect.style.backgroundColor = "gray";
+        var destination = document.getElementById("num20");
+        destination.appendChild(rect);
+    }
+
+    for(i = 0; i <= 20; i++){
+        let rect = document.createElement("div");
+        let width = (sampleArray[i]) + "px";
+        rect.style.marginBottom = 2 + "px";
+        rect.style.height = 20 + "px";
+        rect.style.width = width;
+        rect.style.backgroundColor = "gray";
+        var destination = document.getElementById("num21");
+        destination.appendChild(rect);
+    }
+
+    for(i = 0; i <= 20; i++){
+        let rect = document.createElement("div");
+        let width = (sampleArray[i]) + "px";
+        if(i % 2 == 0) {
+            rect.style.backgroundColor = "red";
+        } else {
+            rect.style.backgroundColor = "gray";
+        }
+        rect.style.marginBottom = 2 + "px";
+        rect.style.height = 20 + "px";
+        rect.style.width = width;
+        var destination = document.getElementById("num22");
+        destination.appendChild(rect);
+    }
+
+    for(i = 0; i <= 20; i++){
+        let rect = document.createElement("div");
+        let width = (sampleArray[i]) + "px";
+        if(sampleArray[i] % 2 == 0) {
+            rect.style.backgroundColor = "red";
+        } else {
+            rect.style.backgroundColor = "gray";
+        }
+        rect.style.marginBottom = 2 + "px";
+        rect.style.height = 20 + "px";
+        rect.style.width = width;
+        var destination = document.getElementById("num23");
+        destination.appendChild(rect);
+    }
+
+    </script>
+</body>
+</html>
